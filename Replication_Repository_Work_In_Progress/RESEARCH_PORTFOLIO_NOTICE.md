@@ -14,13 +14,11 @@ and Python.
 
 ## Copyright and permitted use
 
-Unless otherwise stated, the code and documentation in this repository
-are my original work and remain subject to my copyright.
+Unless otherwise stated, the code and documentation in this repository are part of my research work and remain subject to my copyright.
 
-**This repository is provided as a portfolio showcase only. No licence
-is granted to download, copy, modify, redistribute, publish, or use the
-materials commercially or for other purposes.** Please contact me to
-request permission for any such use.
+**This repository is a work in progress and is being developed as a research portfolio to showcase my work, methods and programming skills. The code and documentation are being updated, reviewed and improved over time.**
+
+No licence is granted to copy, modify, redistribute, publish or use these materials commercially or for other purposes without my prior permission. Please contact me to request permission for any such use.
 
 This notice applies only to materials authored by me. Third-party
 datasets, software, packages, questionnaires, and other externally
