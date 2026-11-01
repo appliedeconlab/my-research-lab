@@ -9,7 +9,7 @@ This repository contains two separate replication workflows, with Stata as the r
 ```text
 .
 ├── README.md
-├── LICENSE
+├── RESEARCH_PORTFOLIO_NOTICE.md
 ├── requirements.txt
 ├── renv_packages.R
 ├── run_chapter_1.do
@@ -23,7 +23,7 @@ This repository contains two separate replication workflows, with Stata as the r
 │       ├── 01_cleaning.*
 │       └── 02_analysis.*
 ├── data/
-│   ├── raw/          # licensed inputs; excluded from Git
+│   ├── raw/          # Data downloaded directly from the original sources
 │   ├── interim/      # prepared source inputs; excluded from Git
 │   └── processed/    # analysis-ready microdata; excluded from Git
 ├── docs/
@@ -36,11 +36,17 @@ This repository contains two separate replication workflows, with Stata as the r
 └── output/{tables,figures,logs,diagnostics}/
 ```
 
-## Important: what this archive can and cannot reproduce
+## Important: Scope and Reproducibility
 
-The current upload included **19 Stata do-files and thesis/supporting documents, but no raw or derived datasets**. The source audit also identified broken/incomplete data-construction steps in both chapters. Consequently, the repository provides the cleaning and analysis stages, portable runners, diagnostics and cross-language implementations, but it cannot generate numerical results until authorised data are placed in the documented folders. It does not claim a verified numerical replication. The build environment did not contain Stata or R; Python files were syntax-compiled, but no empirical models were executed on the restricted survey data.
+This repository contains the Stata do-files, supporting documentation, and replication scripts developed as part of my University of Nottingham MPhil thesis in Economics.
 
-The source files are preserved as path-sanitised snapshots under `legacy_source/`. The thesis PDF, chapter drafts, presentation and viva notes were reviewed as supporting evidence but are not copied into this public repository.
+The original datasets are not included in this repository. They must be downloaded separately from their respective official sources, subject to the applicable data-access and usage requirements.
+
+The repository showcases my research workflow, including data cleaning, variable construction, econometric analysis, and implementations using Stata, R and Python. The scripts are organised by thesis chapter to demonstrate the empirical methods and programming skills used in my research.
+
+The numerical results are dependent on access to the original survey datasets and the successful execution of the corresponding scripts. Therefore, this repository is primarily intended to document and showcase my quantitative research expertise and does not constitute a fully verified, end-to-end numerical replication.
+
+The thesis and associated academic materials are referenced as the basis of the research but are not reproduced in this public repository.
 
 ## Software
 
@@ -60,8 +66,9 @@ No random sampling or simulation is used in the core workflows, so no random see
 
 ### Obtain raw data
 
-Request the India Individual Recode files for NFHS-3, NFHS-4 and NFHS-5 through the [official NFHS/IIPS data-request portal](https://www.nfhsiips.in/nfhsuser/datarequest.php). The current request page requires a registered account and a research-purpose abstract; the published data-use notice restricts redistribution and requires source acknowledgement. Follow the terms displayed at the time of download. The filenames expected by the supplied do-file are:
+The raw NFHS-3, NFHS-4 and NFHS-5 Individual Recode (IR) datasets are available through the official [Demographic and Health Surveys (DHS) Program data portal](https://dhsprogram.com/data/available-datasets.cfm?utm_source=chatgpt.com). Researchers can register for an account and submit a data-access request, specifying the research purpose. Access is subject to DHS data-use conditions. The datasets are not redistributed through this repository. Please follow the applicable terms and acknowledge the original data source when using the data.
 
+The expected filenames for the supplied do-files are:
 - `IAIR52FL_2005_06.dta`
 - `IAIR74FL_2015_16.DTA`
 - `IAIR7EFL_2019_21.DTA`
@@ -145,4 +152,4 @@ The thesis reports N=1,658 for the short-run sample (SubRounds 1–2 vs 3) and N
 
 ## Public GitHub rules
 
-Raw, interim and processed data folders are gitignored. Do not commit NFHS/NSSO respondent-level microdata, restricted extracts, data access credentials, or confidential records. Commit code, documentation, non-disclosive logs/diagnostics, and tables only if their release is permitted by the applicable data agreement.
+Raw, interim and processed data folders are excluded from GitHub. The original NFHS/NSSO datasets should be downloaded directly from their respective official sources. Do not upload respondent-level microdata, restricted datasets, access credentials or confidential information to this repository. Only research code, documentation, non-confidential logs, diagnostics and outputs permitted for public sharing should be included.
