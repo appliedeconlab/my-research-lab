@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "If you use this replication code, please cite the MPhil thesis and the relevant survey documentation."
+title: "MPhil Thesis Replication Repository"
+type: software
+date-released: 2026-11-01
+license: MIT
