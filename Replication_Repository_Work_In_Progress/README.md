@@ -1,4 +1,4 @@
-# MPhil thesis replication repository
+# Replication repository
 
 This repository contains two separate replication workflows, with Stata as the reference implementation and R/Python counterparts where the available source materials support them.
 
